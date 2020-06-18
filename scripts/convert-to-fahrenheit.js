@@ -3,8 +3,8 @@
 console.log('-- loading: convertToFahrenheit');
 
 
-function convertToFahrenheit() { }
-
+function convertToFahrenheit(par) { 
+  return (par*9/5)+32}
 
 {
   console.log('-- testing: convertToFahrenheit ');
@@ -46,11 +46,11 @@ function convertToFahrenheitHandler() {
   debugger;
 
   // read user input
-
+  const c=prompt('enter the temperature')
   // core logic
   const result = convertToFahrenheit(c);
 
   // display for use
-
+  alert(result)
   // log for developers
 }
