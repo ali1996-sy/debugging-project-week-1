@@ -3,7 +3,13 @@
 console.log('-- loading: confirmEnding');
 
 
-function confirmEnding() { }
+function confirmEnding(arg1,arg2) {
+for(let i=String(arg2).length;i>0;i--){
+  let a=String(arg1).charAt(String(arg1).length-i)
+  if(String(arg1).charAt(String(arg1).length-i)!=String(arg2).charAt(String(arg2).length-i)) return false;
+}
+return true;
+}
 
 
 {
@@ -65,11 +71,12 @@ function confirmEndingHandler() {
   debugger;
 
   // read user input
-
+  const str=prompt('enter name')
+  const ending=prompt('enter the ending to confirm')
   // core logic
   const result = confirmEnding(str, ending);
 
   // display for use
-
+  alert(result)
   // log for developers
 }

@@ -4,6 +4,7 @@
 <head>
   <meta charset='utf8'>
   <title>Debugging: project, week 1</title>
+  <link rel="stylesheet" href='./style.css'>
   <!-- Leave this here!  It renders the review buttons  -->
   <script src='./review-buttons/init.js'></script>
   <script src="./scripts/convert-to-celsius.js"></script>
@@ -15,7 +16,15 @@
 </head>
 
 <body>
-  <button onclick='convertToCelsiusHandler()'>convertToCelsiusHandler</button>
+  <div class='centered'>
+  <button   onclick='convertToCelsiusHandler()'>convertToCelsiusHandler</button> <br>
+  <button  onclick='convertToFahrenheitHandler()'>convertToFahrenheit</button> <br>
+  <button   onclick='findLongestWordLengthHandler()'>findLongestWordLength</button><br>
+  <button   onclick='repeatStringNumTimesHandler()'>repeatStringNumTimes</button><br>
+  <button   onclick='reverseStringHandler()'>reverseString</button><br>
+  <button   onclick='confirmEndingHandler()'>confirmEnding</button><br>
+</div>
+
 </body>
 
 </html>
