@@ -3,7 +3,10 @@
 console.log('-- loading: convertToCelsius');
 
 
-function convertToCelsius() { }
+function convertToCelsius(f) { 
+
+ return ((f-32)*5/9);
+}
 
 
 {
@@ -46,11 +49,15 @@ function convertToCelsiusHandler() {
   debugger;
 
   // read user input
-
+  const temp=Number(prompt('enter the temperature '));
   // core logic
-  const result = convertToCelsius(f);
+  const result = convertToCelsius(temp);
 
   // display for use
-
+  alert(result)
   // log for developers
+  console.log('-- interaction log --');
+    console.log('input1:', typeof input1, '\n', input1);
+    console.log('input2:', typeof input2, '\n', input2);
+    console.log('response:', typeof response, '\n', response);
 }
