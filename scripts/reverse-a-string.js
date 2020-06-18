@@ -4,9 +4,11 @@ console.log('-- loading: reverseString');
 
 
 function reverseString(arg) {
-  for(let i=String(arg).length;i>=0;i--){
+  let result=' '
+  for(let i=String(arg).length-1;i>=0;i--){
 result+=arg[i];
   }
+  return result
  }
 
 
