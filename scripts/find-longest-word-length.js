@@ -3,8 +3,8 @@
 console.log('-- loading: findLongestWordLength');
 
 
-function findLongestWordLength() { }
-
+function findLongestWordLength(par) { 
+return String(par).length;}
 
 {
   console.log('-- testing: findLongestWordLength ');
@@ -41,12 +41,12 @@ function findLongestWordLengthHandler() {
   debugger;
 
   // read user input
-
+  const str=prompt('enter the world')
   // core logic
   const result = findLongestWordLength(str);
 
   // display for use
-
+  alert('the length of the world is '+result)
   // log for developers
 }
 
